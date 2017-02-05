@@ -9,5 +9,5 @@ docker build tddec .
 ## Run
 
 ```
-docker run -it tddec bash
+docker run -v $PWD/code/:/code -it tddec bash
 ```
