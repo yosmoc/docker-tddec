@@ -8,6 +8,8 @@ docker build tddec .
 
 ## Run
 
+### Working inside the container
+
 ```
 docker run -v $PWD/code/:/code -it tddec bash
 ```
