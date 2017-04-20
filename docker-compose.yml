@@ -1,0 +1,8 @@
+version: '3'
+services:
+  tddec:
+    build:
+      context: ./
+    volumes:
+      - ./code/:/work/code
+    tty: true

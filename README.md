@@ -1,15 +1,38 @@
-# Test-Driven Development for Embedded C
+# Docker environment for "Test-Driven Development for Embedded C"
 
-## Build the environment
+## Dependencies
+
+- docker
+- docker-compose
+- wget
+- make
+
+## Usage
+
+### help
+
+```make``` or ```make help```
+
+### Build the environment
 
 ```
-docker build tddec .
+make build
 ```
 
-## Run
+### Run docker container
+
+```
+make start
+```
 
 ### Working inside the container
 
 ```
-docker run -v $PWD/code/:/code -it tddec bash
+make attach
+```
+
+### Stop the docker container
+
+```
+make stop
 ```
